@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" style="height:100%;">
+  <head>
+    <meta charset="utf-8">
+    <title>DI Afghan Election Surveys</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Loading Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/carousel.css" rel="stylesheet">
+
+    <!-- Other Libraries -->
+    <link href='http://api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.css' rel='stylesheet'>
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <!--[if lte IE 8]>
+    <link href='//api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.ie.css' rel='stylesheet' />
+    <![endif]-->
+
+    <!-- Loading Google Fonts Open Sans -->
+<!--     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600' rel='stylesheet' type='text/css'> -->
+
+    <!-- Loading Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!-- Loading Custom CSS -->
+    <link href="css/app.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- <div class="sizeTests">
+        <div class="sizeTest visible-xs">X-Small</div>
+        <div class="sizeTest visible-sm">Small</div>
+        <div class="sizeTest visible-md">Medim</div>
+        <div class="sizeTest visible-lg">Large</div>
+        <div class="sizeTest" id="pageWidth"></div>
+    </div> -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Afghan Election Surveys</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class=""><a href="#">Main Findings</a></li>
+                    <li><a href="#">December Survey</a></li>
+                    <li><a href="#">January Survey</a></li>
+                    <li><a href="#">March Survey</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class=""><a href="#"><i class="fa fa-info-circle"></i></span> About</a></li>
+                    <li class=""><a href="#"><i class="fa fa-cloud-download"></i></span> Data</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="header-content">
+        <div class="row header-headline center-block">
+            <div>
+                <h1 class="text-center">December Survey Results</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="main-content" class="container marketing">
+        <div class="row">
+            <div class="col-sm-4">
+                <img class="img-circle home-circle-img" src="img/16.jpg">
+                <h2>December Survey</h2>
+                <p>View the results from DI's December public opinion survey ahead of April elections in Afghanistan.</p>
+                <p><a href="" class="btn btn-default">View the Results</a></p>
+            </div>
+            <div class="col-sm-4">
+                <img class="img-circle home-circle-img" src="img/10.jpg">
+                <h2>Afghan Election Surveys</h2>
+                <p>DI is conducting a series of public opinion surveys ahead of elections in April to guage Afghan's trust in the process and political preferences.</p>
+                <p><a href="" class="btn btn-default">Read More</a></p>
+            </div>
+            <div class="col-sm-4">
+                <img class="img-circle home-circle-img" src="img/11.jpg">
+                <h2>Download the Data</h2>
+                <p>Dig into DI's survey fundings yourself by downloading and analyzing the raw data.</p>
+                <p><a href="" class="btn btn-default">Get the Data</a></p>
+            </div>
+        </div>
+        
+    </div>
+
+    <footer class="footer-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2">
+                    <a href="http://www.democracyinternational.com"><img src="img/logo-gray.png" style="width: 100%"></a>
+                </div>
+                <div class="col-sm-6 pull-right">
+                    <ul class="list-inline">
+                        <li>Copyright 2014 Democracy International, Inc.</li>
+                        <li><i class="fa fa-twitter-square fa-3x"></i></li>
+                        <li><i class="fa fa-facebook-square fa-3x"></i></li>
+                        <li><i class="fa fa-github-square fa-3x"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <!-- ***************** MODALS **************** -->
+    <!-- Filter Modal -->
+
+    <script type="text/template" id="mapChartStatsTemplate">
+        <div class='stats-box'>
+            <div class="stat">
+                <span class="stat-value"><%= count %></span>
+                <span class="stat-name text-muted">Opportunities</span>
+            </div>
+            <div class="stat">
+                <span class="stat-value"><%= value %></span>
+                <span class="stat-name text-muted">Total Value</span>
+            </div>
+            <div class="stat">
+                <span class="stat-value"><%= average %></span>
+                <span class="stat-name text-muted">Average Value</span>
+            </div>
+        </div>
+    </script>
+
+    <!-- assumes columns is an array of strings, need to change if its an object -->
+    <script type="text/template" id="listViewTemplate">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 table-wrapper">
+                    <table class="table footable" data-page-navigation=".pagination" data-page-size="10">
+                        <thead>
+                            <tr>
+                                <% _.each(columns, function(col,i){ %>
+                                    <th style="min-width:<%=col.minWidth %>" data-hide=<%= col.hide %> ><%= col.label %></th>   
+                                <% }) %>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% _.each(rows, function(row,i){ %>
+                                <tr>
+                                    <% _.each(columns, function(col,i){ %>
+                                        <td>
+                                            <%= row.attributes[col.field] %>
+                                        </td>
+                                    <% }) %>
+                                </tr>
+                            <% }) %>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="8">
+                                    <div class="pagination pull-right"></div>
+                                </td>
+                            </tr>
+
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </script>
+
+
+    <!-- Load jQuery and Bootstrap JS =============================-->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Load Other libraries -->
+
+    <script src='http://api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.js'></script>
+    
+    <!-- Load Backbone core and Backbone Models, Collections, Views, Routers --> 
+
+    <script src="js/lib/underscore-min.js"></script>
+    <script src="js/lib/backbone-min.js"></script>
+    <script src="js/routers/router.js"></script>
+    <script src="js/app.js"></script>
+
+  </body>
+</html>
