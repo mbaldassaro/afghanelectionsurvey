@@ -19,7 +19,13 @@ app.Router = Backbone.Router.extend({
 		console.log("Index route");
 		this.headerView = new app.HeaderView;
 		console.log(this.headerView);
-		this.homeView = new app.HomeView;
+		var homeContent = new app.HomeContent;
+		homeContent.fetch({
+			success: function(){
+				console.log('success');
+			}
+		});
+		this.homeView = new app.HomeView({collection: homeContent});
 	},
 });
 
