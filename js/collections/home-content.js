@@ -64,7 +64,3 @@ app.HomeContent = Backbone.Collection.extend({
 	// 	return data;
 	// }
 });
-
-var forecastList = new app.ForecastList;
-
-forecastList.fetch();
