@@ -19,14 +19,37 @@ app.Router = Backbone.Router.extend({
 		console.log("Index route");
 		this.headerView = new app.HeaderView;
 		console.log(this.headerView);
-		var homeContent = new app.HomeContent;
-		homeContent.fetch({
+		this.homeContent = new app.HomeContent;
+		this.homeContent.on('sync',this.initializeHomeView, this);
+		this.homeContent.fetch({
 			success: function(){
-				console.log('success');
+				console.log('homeContent fetch success!');
+			},
+			error: function(){
+				console.log('homeContent fetch error!');
 			}
 		});
-		this.homeView = new app.HomeView({collection: homeContent});
 	},
+	initializeHomeView: function(){
+		console.log('initializeHomeView called!');
+		console.log(this.homeContent);
+		this.homeView = new app.HomeView({collection: this.homeContent});
+	},
+	initializeChartSectionView: function(){
+
+	},
+	initializeMapSectionView: function(){
+
+	},
+	initializeMethodologySectionView: function(){
+
+	},
+	initializeAboutView: function(){
+
+	},
+	initializeDataView: function(){
+
+	}
 });
 
 var router = new app.Router();
