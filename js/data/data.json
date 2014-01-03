@@ -1,0 +1,17 @@
+[
+	{
+		title:"December Survey",
+		text:"View the results from DI's December public opinion survey ahead of April elections in Afghanistan.",
+		button: "View the Results"
+	},
+	{
+		title:"Afghan Election Surveys",
+		text:"DI is conducting a series of public opinion surveys ahead of elections in April to guage Afghan's trust in the process and political preferences.",
+		button: "Read More"
+	},
+	{
+		title:"Download the Data",
+		text:"Dig into DI's survey fundings yourself by downloading and analyzing the raw data.",
+		button: "Get the Data"
+	}
+]

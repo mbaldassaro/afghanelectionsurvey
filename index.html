@@ -64,35 +64,12 @@
         </div>
     </div>
     
-    <div id="header-content">
-        <div class="row header-headline center-block">
-            <div>
-                <h1 class="text-center">December Survey Results</h1>
-            </div>
-        </div>
+    <div id="header">
+        
     </div>
 
-    <div id="main-content" class="container marketing">
-        <div class="row">
-            <div class="col-sm-4">
-                <img class="img-circle home-circle-img" src="img/16.jpg">
-                <h2>December Survey</h2>
-                <p>View the results from DI's December public opinion survey ahead of April elections in Afghanistan.</p>
-                <p><a href="" class="btn btn-default">View the Results</a></p>
-            </div>
-            <div class="col-sm-4">
-                <img class="img-circle home-circle-img" src="img/10.jpg">
-                <h2>Afghan Election Surveys</h2>
-                <p>DI is conducting a series of public opinion surveys ahead of elections in April to guage Afghan's trust in the process and political preferences.</p>
-                <p><a href="" class="btn btn-default">Read More</a></p>
-            </div>
-            <div class="col-sm-4">
-                <img class="img-circle home-circle-img" src="img/11.jpg">
-                <h2>Download the Data</h2>
-                <p>Dig into DI's survey fundings yourself by downloading and analyzing the raw data.</p>
-                <p><a href="" class="btn btn-default">Get the Data</a></p>
-            </div>
-        </div>
+    <div id="home-content" class="container marketing">
+        
         
     </div>
 
@@ -118,57 +95,34 @@
     <!-- ***************** MODALS **************** -->
     <!-- Filter Modal -->
 
-    <script type="text/template" id="mapChartStatsTemplate">
-        <div class='stats-box'>
-            <div class="stat">
-                <span class="stat-value"><%= count %></span>
-                <span class="stat-name text-muted">Opportunities</span>
-            </div>
-            <div class="stat">
-                <span class="stat-value"><%= value %></span>
-                <span class="stat-name text-muted">Total Value</span>
-            </div>
-            <div class="stat">
-                <span class="stat-value"><%= average %></span>
-                <span class="stat-name text-muted">Average Value</span>
+    <script type="text/template" id="headerTemplate">
+        <div class="row header-headline center-block">
+            <div>
+                <h1 class="text-center">December Survey Results</h1>
             </div>
         </div>
     </script>
 
     <!-- assumes columns is an array of strings, need to change if its an object -->
-    <script type="text/template" id="listViewTemplate">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 table-wrapper">
-                    <table class="table footable" data-page-navigation=".pagination" data-page-size="10">
-                        <thead>
-                            <tr>
-                                <% _.each(columns, function(col,i){ %>
-                                    <th style="min-width:<%=col.minWidth %>" data-hide=<%= col.hide %> ><%= col.label %></th>   
-                                <% }) %>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <% _.each(rows, function(row,i){ %>
-                                <tr>
-                                    <% _.each(columns, function(col,i){ %>
-                                        <td>
-                                            <%= row.attributes[col.field] %>
-                                        </td>
-                                    <% }) %>
-                                </tr>
-                            <% }) %>
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <td colspan="8">
-                                    <div class="pagination pull-right"></div>
-                                </td>
-                            </tr>
-
-                        </tfoot>
-                    </table>
-                </div>
+    <script type="text/template" id="homeContentTemplate">
+        <div class="row">
+            <div class="col-sm-4">
+                <img class="img-circle home-circle-img" src="img/16.jpg">
+                <h2>December Survey</h2>
+                <p>View the results from DI&#39;s December public opinion survey ahead of April elections in Afghanistan.</p>
+                <p><a href="" class="btn btn-default">View the Results</a></p>
+            </div>
+            <div class="col-sm-4">
+                <img class="img-circle home-circle-img" src="img/10.jpg">
+                <h2>Afghan Election Surveys</h2>
+                <p>DI is conducting a series of public opinion surveys ahead of elections in April to guage Afghan&#39;s trust in the process and political preferences.</p>
+                <p><a href="" class="btn btn-default">Read More</a></p>
+            </div>
+            <div class="col-sm-4">
+                <img class="img-circle home-circle-img" src="img/11.jpg">
+                <h2>Download the Data</h2>
+                <p>Dig into DI&#39;s survey fundings yourself by downloading and analyzing the raw data.</p>
+                <p><a href="" class="btn btn-default">Get the Data</a></p>
             </div>
         </div>
 
@@ -187,6 +141,10 @@
 
     <script src="js/lib/underscore-min.js"></script>
     <script src="js/lib/backbone-min.js"></script>
+    <script src="js/models/home-content-item.js"></script>
+    <script src="js/collections/home-content.js"></script>
+    <script src="js/views/header-view.js"></script>
+    <script src="js/views/home-view.js"></script>
     <script src="js/routers/router.js"></script>
     <script src="js/app.js"></script>
 
