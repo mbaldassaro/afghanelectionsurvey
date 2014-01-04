@@ -275,15 +275,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 8186,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "css/app.css",
-			"settings":
-			{
-				"buffer_size": 1038,
+				"buffer_size": 5420,
 				"line_ending": "Windows"
 			}
 		},
@@ -293,6 +285,110 @@
 			{
 				"buffer_size": 23351,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/routers/router.js",
+			"settings":
+			{
+				"buffer_size": 1318,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/views/home-view.js",
+			"settings":
+			{
+				"buffer_size": 481,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/views/home-content-item-view.js",
+			"settings":
+			{
+				"buffer_size": 434,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/data/data.json",
+			"settings":
+			{
+				"buffer_size": 670,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/models/home-content-item.js",
+			"settings":
+			{
+				"buffer_size": 73,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/collections/home-content.js",
+			"settings":
+			{
+				"buffer_size": 128,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/esmith/Dropbox/Websites/github-repos/usaidforecastdata/js/views/list-view.js",
+			"settings":
+			{
+				"buffer_size": 2503,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/app.css",
+			"settings":
+			{
+				"buffer_size": 1121,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/esmith/Dropbox/Websites/github-repos/usaidforecastdata/js/views/about-view.js",
+			"settings":
+			{
+				"buffer_size": 321,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/views/chart-section-view.js",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/views/map-section-view.js",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/views/methodology-section-view.js",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/esmith/Dropbox/Websites/github-repos/usaidforecastdata/js/collections/forecast-list.js",
+			"settings":
+			{
+				"buffer_size": 5811,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -320,13 +416,16 @@
 	},
 	"file_history":
 	[
+		"/C/Users/esmith/Dropbox/Websites/github-repos/afghanelectionsurvey/js/views/home-view.js",
+		"/C/Users/esmith/Dropbox/Websites/github-repos/afghanelectionsurvey/js/data/data.js",
+		"/C/Users/esmith/Dropbox/Websites/github-repos/usaidforecastdata/js/views/map-view.js",
+		"/C/Users/esmith/Dropbox/Websites/github-repos/usaidforecastdata/js/routers/router.js",
+		"/C/Users/esmith/Dropbox/Websites/github-repos/usaidforecastdata/index.html",
 		"/C/Users/esmith/Dropbox/Websites/github-repos/usaidforecastdata/css/app.css",
 		"/C/Users/esmith/Dropbox/Websites/github-repos/usaidforecastdata/js/app.js",
 		"/C/Users/esmith/Dropbox/Websites/github-repos/usaidforecastdata/bootstrap/css/bootstrap.css",
-		"/C/Users/esmith/Dropbox/Websites/github-repos/usaidforecastdata/js/routers/router.js",
 		"/C/Users/esmith/Dropbox/Websites/github-repos/usaidforecastdata/js/collections/forecast-list.js",
 		"/C/Users/esmith/Dropbox/Websites/github-repos/usaidforecastdata/js/views/filter-view.js",
-		"/C/Users/esmith/Dropbox/Websites/github-repos/usaidforecastdata/js/views/map-view.js",
 		"/C/Users/esmith/Dropbox/Websites/github-repos/usaidforecastdata/js/views/list-view.js",
 		"/C/Users/esmith/Dropbox/Websites/github-repos/usaidforecastdata/js/views/map-chart-view.js",
 		"/C/Users/esmith/Dropbox/Websites/github-repos/afghanelectionsurvey/css/carousel.css",
@@ -444,10 +543,7 @@
 		"/C/Users/esmith/Dropbox/Websites/Resources/BigText/demo/simpleDemoDiv.html",
 		"/C/Users/esmith/Dropbox/Websites/USAID Forecast (Foundation)/js/mapbox.jquery.js",
 		"/C/Users/esmith/Dropbox/Websites/USAID Forecast (Foundation)/js/script.js",
-		"/C/Users/esmith/Dropbox/Websites/USAID Forecast (Foundation)/css/foundation.css",
-		"/C/Users/esmith/Dropbox/Websites/USAID Forecast (Foundation)/css/styles.css",
-		"/C/Users/esmith/Dropbox/Websites/USAID Forecast (Foundation)/index.html",
-		"/C/Users/esmith/Dropbox/Websites/USAID Forecast Dashboard-Foundation/assets/scss/app.scss"
+		"/C/Users/esmith/Dropbox/Websites/USAID Forecast (Foundation)/css/foundation.css"
 	],
 	"find":
 	{
@@ -610,7 +706,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -618,15 +714,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 8186,
+						"buffer_size": 5420,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2715,
-								2715
+								5313,
+								5251
 							]
 						],
 						"settings":
@@ -636,44 +732,99 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 640.0,
+						"translation.y": 1840.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "css/app.css",
+					"file": "/C/Users/esmith/Dropbox/Websites/github-repos/usaidforecastdata/index.html",
 					"settings":
 					{
-						"buffer_size": 1038,
+						"buffer_size": 23351,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1038,
-								1037
+								20437,
+								20437
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 400.0,
+						"translation.y": 6720.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "/C/Users/esmith/Dropbox/Websites/github-repos/usaidforecastdata/index.html",
+					"file": "js/routers/router.js",
 					"settings":
 					{
-						"buffer_size": 23351,
+						"buffer_size": 1318,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								929,
+								929
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 80.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "js/views/home-view.js",
+					"settings":
+					{
+						"buffer_size": 481,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								307,
+								307
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "js/views/home-content-item-view.js",
+					"settings":
+					{
+						"buffer_size": 434,
 						"regions":
 						{
 						},
@@ -686,12 +837,278 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 137.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "js/data/data.json",
+					"settings":
+					{
+						"buffer_size": 670,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								665,
+								665
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "js/models/home-content-item.js",
+					"settings":
+					{
+						"buffer_size": 73,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "js/collections/home-content.js",
+					"settings":
+					{
+						"buffer_size": 128,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								128,
+								128
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/C/Users/esmith/Dropbox/Websites/github-repos/usaidforecastdata/js/views/list-view.js",
+					"settings":
+					{
+						"buffer_size": 2503,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1667,
+								1667
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "css/app.css",
+					"settings":
+					{
+						"buffer_size": 1121,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								409,
+								409
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "/C/Users/esmith/Dropbox/Websites/github-repos/usaidforecastdata/js/views/about-view.js",
+					"settings":
+					{
+						"buffer_size": 321,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								321
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "js/views/chart-section-view.js",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "js/views/map-section-view.js",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "js/views/methodology-section-view.js",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "/C/Users/esmith/Dropbox/Websites/github-repos/usaidforecastdata/js/collections/forecast-list.js",
+					"settings":
+					{
+						"buffer_size": 5811,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5753,
+								5753
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
