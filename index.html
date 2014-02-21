@@ -67,35 +67,47 @@
     <div id="header">
     </div>
 
-    <div id="home-content" class="container marketing">
-        <div class="row" id="home-content-row">
-        </div>
-    </div>
-
-    <div id="about" class="container">
+    <div id="chart-content" class="container">
         <div class="row">
             <div class="col-sm-12">
                 <div class="page-header">
-                    <h1>About DI&apos;s Afghan Public Opinion Polling Project</h1>
+                    <h1>December Survey Results</h1>
                 </div>
-                <p>In advance of presidential and provincial council elections in Afghanistan planned for April 2014, Democracy International will conduct three nationwide surveys to learn about voter preferences on key election issues, voter participation trends, and candidates. Working with Soft Power Solutions, a respected Afghan research firm, DI is developing a robust, reproducible survey design to sample more than 2,500 eligible voters. DI will initiate the first survey after the Afghan Independent Election Commission publishes its official candidate list, expected in mid-November.</p>
-
-                <p>To supplement the in-person surveys, DI will also conduct focus groups in urban and rural areas to further explore political perceptions in varying social environments. DI is drawing upon its extensive experience with nationwide surveys in Afghanistan (see our 2012 and 2013 surveys) to design a context-appropriate methodology that respects cultural and gender sensitivities, accounts for geographic challenges, and overcomes the obstacles presented by the country’s unreliable infrastructure and telecommunications networks.</p>
             </div>
         </div>
     </div>
 
-    <div id="methodology" class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="page-header">
-                    <h1>Survey Methodology</h1>
-                </div>
-                <p>In advance of presidential and provincial council elections in Afghanistan planned for April 2014, Democracy International will conduct three nationwide surveys to learn about voter preferences on key election issues, voter participation trends, and candidates. Working with Soft Power Solutions, a respected Afghan research firm, DI is developing a robust, reproducible survey design to sample more than 2,500 eligible voters. DI will initiate the first survey after the Afghan Independent Election Commission publishes its official candidate list, expected in mid-November.</p>
+    <div id="map-content">
+    </div>
 
-                <p>To supplement the in-person surveys, DI will also conduct focus groups in urban and rural areas to further explore political perceptions in varying social environments. DI is drawing upon its extensive experience with nationwide surveys in Afghanistan (see our 2012 and 2013 surveys) to design a context-appropriate methodology that respects cultural and gender sensitivities, accounts for geographic challenges, and overcomes the obstacles presented by the country’s unreliable infrastructure and telecommunications networks.</p>
+    <div id="home-content">
+        <div id="blurb" class="container marketing">
+            <div class="row" id="home-content-row">
             </div>
         </div>
+
+        <div id="about" class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="page-header">
+                        <h1>About</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="data" class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="page-header">
+                        <h1>Data</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="data-content-row">
+            </div>
+        </div>    
+
     </div>
 
     <footer class="footer-container">
@@ -116,24 +128,40 @@
         </div>
     </footer>
 
-    
-    <!-- ***************** MODALS **************** -->
-    <!-- Filter Modal -->
+    <!-- Load View Templates -->
 
     <script type="text/template" id="headerTemplate">
         <div class="row header-headline center-block">
-            <div>
+            <div class="title-border">
                 <h1 class="text-center">December Survey Results</h1>
             </div>
         </div>
     </script>
 
-    <!-- assumes columns is an array of strings, need to change if its an object -->
-    <script type="text/template" id="homeItemTemplate">
+    <script type="text/template" id="homeBlurbTemplate">
         <img class="img-circle home-circle-img" src=<%= imageSource %>>
         <h2><%= title %></h2>
         <p><%= text %></p>
-        <p><a href="" class="btn btn-default"><%= button %></a></p>
+        <p><a href=<%= url %> class="btn btn-default"><%= button %></a></p>
+    </script>
+
+    <script type="text/template" id="homeAboutTemplate">
+        <div class="col-sm-12">
+            <h4><%= title %></h4>
+            <p><%= text %></p>
+        </div>
+    </script>
+
+    <script type="text/template" id="homeDataTemplate">
+        <a href=<%=url%>>
+            <div class="data-item" style="background-image: url(../<%=imageSource%>)"> 
+                <div class="data-title center-block">
+                    <div class="data-title-inner">
+                        <h1 class="text-center"><%= title %></h1>
+                    </div>
+                </div>
+            </div>
+        </a>
     </script>
 
 
@@ -144,16 +172,23 @@
     <!-- Load Other libraries -->
 
     <script src='http://api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.js'></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
     
     <!-- Load Backbone core and Backbone Models, Collections, Views, Routers --> 
 
     <script src="js/lib/underscore-min.js"></script>
     <script src="js/lib/backbone-min.js"></script>
     <script src="js/models/home-content-item.js"></script>
+    <script src="js/models/survey-content-item.js"></script>
     <script src="js/collections/home-content.js"></script>
+    <script src="js/collections/survey-content.js"></script>
     <script src="js/views/header-view.js"></script>
+    <script src="js/views/chart-item-view.js"></script>
+    <script src="js/views/chart-section-view.js"></script>
     <script src="js/views/home-view.js"></script>
     <script src="js/views/home-content-item-view.js"></script>
+    <script src="js/views/about-section-view.js"></script>
+    <script src="js/views/data-section-view.js"></script>
     <script src="js/routers/router.js"></script>
     <script src="js/app.js"></script>
 

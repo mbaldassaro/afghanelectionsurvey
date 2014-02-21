@@ -1,0 +1,25 @@
+[
+	{
+		"question":"Reasons for Participating in Elections",
+		"survey":"dec",
+		"category":"election",
+		"topic":"importance",
+		"chart":{
+			"type":"column",
+			"title":{
+				"text":"Reasons for Participating in Elections"
+			},
+			"xAxis":{
+				"categories":["The civic duty of all Afghan citizens","Compatible with Islamic values and teachings","My own personal responsibility","The responsibility of the male family members","The responsibility of the residents of Kabul"]
+			},
+			"series":[{
+	            "name":"Agree",
+	            "data": [96,77,63,44,59]        
+	        },
+	        {
+	        	"name":"Disagree",
+	        	"data":[2,11,34,52,34]
+	        }]
+		}
+	}
+]

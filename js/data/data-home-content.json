@@ -1,0 +1,59 @@
+[
+	{
+		"title":"December Survey",
+		"text":"View the results from DI&apos;s December public opinion survey ahead of April elections in Afghanistan.",
+		"button": "View the Results",
+		"imageSource":"img/2.jpg",
+		"content-type":"blurb",
+		"url":"#"
+	},
+	{
+		"title":"Afghan Election Surveys",
+		"text":"DI is conducting a series of public opinion surveys ahead of elections in April to guage Afghan&apos;s trust in the process and political preferences.",
+		"button": "Read More",
+		"imageSource":"img/10.jpg",
+		"content-type":"blurb",
+		"url":"#"
+	},
+	{
+		"title":"Download the Data",
+		"text":"Dig into DI&apos;s survey fundings yourself by downloading and analyzing the raw data.",
+		"button": "Get the Data",
+		"imageSource":"img/11.jpg",
+		"content-type":"blurb",
+		"url":"#"
+	},
+	{
+		"title":"Afghan Election Survey Project",
+		"text":"<p>In advance of presidential and provincial council elections in Afghanistan planned for April 2014, Democracy International will conduct three nationwide surveys to learn about voter preferences on key election issues, voter participation trends, and candidates. Working with Soft Power Solutions, a respected Afghan research firm, DI is developing a robust, reproducible survey design to sample more than 2,500 eligible voters. DI will initiate the first survey after the Afghan Independent Election Commission publishes its official candidate list, expected in mid-November.</p><p>To supplement the in-person surveys, DI will also conduct focus groups in urban and rural areas to further explore political perceptions in varying social environments. DI is drawing upon its extensive experience with nationwide surveys in Afghanistan (see our 2012 and 2013 surveys) to design a context-appropriate methodology that respects cultural and gender sensitivities, accounts for geographic challenges, and overcomes the obstacles presented by the country’s unreliable infrastructure and telecommunications networks.</p>",
+		"content-type":"about",
+		"url":"#"
+	},
+	{
+		"title":"Democracy International",
+		"text":"<p>Democracy International, Inc. (DI) provides analytical services, technical assistance, and project implementation for democracy and governance programs worldwide for the U.S. Agency for International Development (USAID) and other development partners. Unique among consulting firms, DI’s core capabilities and principal focus are in international democracy and governance (DG) assistance. DI offers expertise and practical, field-based experience across the entire range of DG programming, including: (1) elections and political processes (voter education, political party development, election management and administration, international and domestic election monitoring); (2) governance (legislative and institutional strengthening, local government and decentralization); (3) the rule of law (constitutional and legal reform, justice-sector reform, court administration, legal profession, anticorruption, human rights); and (4) civil society development and advocacy. The firm also has extensive experience with analytical services, including assessments, evaluations, project designs, democracy assistance studies, survey research, quantitative methods, M&E, and strategic communications.</p><p>Since its founding in 2003, Democracy International has worked with civil society organizations, political parties, election-management bodies, government agencies, legislatures, justice-sector institutions, and others in more than 70 countries, including emerging democracies, semiauthoritarian countries, postconflict societies, and failed and fragile states. These projects have ranged from short-term deployments requiring rapid response to major undertakings requiring long-term implementation. The firm is based in the United States with project offices around the world and is an SBA-registered small business.</p>",
+		"content-type":"about",
+		"url":"#"
+	},
+	{
+		"title":"December Data",
+		"text":"",
+		"url":"#",
+		"imageSource":"img/5.jpg",
+		"content-type":"data"
+	},
+	{
+		"title":"January Data",
+		"text":"",
+		"url":"#",
+		"imageSource":"img/7.jpg",
+		"content-type":"data"
+	},
+	{
+		"title":"March Data",
+		"text":"",
+		"url":"#",
+		"imageSource":"img/8.jpg",
+		"content-type":"data"
+	}
+]

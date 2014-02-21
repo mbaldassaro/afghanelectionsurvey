@@ -29,14 +29,22 @@ app.Router = Backbone.Router.extend({
 				console.log('homeContent fetch error!');
 			}
 		});
+		this.chartContent = new app.SurveyContent;
+		this.chartContent.on('sync',this.initializeChartSectionView, this);
+		this.chartContent.fetch({
+			success: function(){
+				console.log('chartContent fetch success!');
+			},
+			error: function(){
+				console.log('chartContent fetch error!');
+			}
+		});
 	},
 	initializeHomeView: function(){
-		console.log('initializeHomeView called!');
-		console.log(this.homeContent);
 		this.homeView = new app.HomeView({collection: this.homeContent});
 	},
 	initializeChartSectionView: function(){
-
+		this.chartView = new app.ChartView({collection: this.chartContent});
 	},
 	initializeMapSectionView: function(){
 

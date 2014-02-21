@@ -1,6 +1,6 @@
 .home-circle-img {
-	width:140px;
-	height:140px;
+	width:50%;
+	height:50%;
 	display: block;
  	margin-left: auto;
  	margin-right: auto;
@@ -10,7 +10,7 @@
 	background-color:#222222;
 	color:#999999;
 	padding-top:65px;
-	padding-bottom:65px;
+	padding-bottom:35px;
 }
 
 #methodology{
@@ -25,6 +25,10 @@
 	transition: height 0.5s ease;
 }
 
+#home-content {
+	margin-bottom:35px;
+}
+
 .header-expanded {
 	height:700px;
 }
@@ -35,7 +39,7 @@
 
 .header-headline{
 	position:relative;
-	top:50%;
+	top:48%;
 	width:30%;
 }
 
@@ -44,10 +48,35 @@
 	color:#ffffff;
 }
 
-.header-headline div {
+.title-border {
 	border:10px solid #ffffff;
 	padding: 15px 0 15px 0;
 }
+
+.data-item {
+	width:100%;
+	height:140px;
+	background: #999999 no-repeat center center;
+	background-size: cover;
+}
+.data-title{
+	position:absolute;
+	width:80%;
+	left: 50%;
+	height:100%;
+}
+
+.data-title-inner{
+	position:relative;
+	left: -50%;
+	color:#ffffff;
+	height:120px;
+	margin-top:20px;
+	margin-bottom:10px;
+	padding: 15px 0 15px 0;
+}
+
+
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
